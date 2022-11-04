@@ -1,0 +1,56 @@
+
+<div class="mat-elevation-z8">
+    <div class="mat-elevation-z8">
+        <button mat-raised-button class="back-button" color="primary" routerLink="/..">
+            <mat-icon>arrow_back_ios</mat-icon> Back
+        </button>
+        <mat-accordion class="block my-5">
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    Gateway details
+                </mat-expansion-panel-header>
+                <mat-list>
+                    <mat-list-item>
+                        <h3 mat-line class="text-gray-500">
+                            ID Gateway
+                        </h3>
+                        <p mat-line>{{gateway.id}}</p>
+                    </mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>
+                        <h3 mat-line class="text-gray-500">
+                            Serial Number
+                        </h3>
+                        <p mat-line>{{gateway.serialNumber}}</p>
+                    </mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>
+                        <h3 mat-line class="text-gray-500">
+                            IP V4 Address
+                        </h3>
+                        <p mat-line>{{gateway.ipv4Address}}</p>
+                    </mat-list-item>
+                </mat-list>
+            </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion class="block my-5">
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    Gateway devices
+                </mat-expansion-panel-header>
+                <mat-list *ngFor="let device of gateway.devices; let i = index">
+                    <mat-list-item>
+                        <h4 mat-line class="text-gray-500">
+                            Device {{i + 1}}
+                        </h4>
+                        <p mat-line>UID: {{device.uid}}</p>
+                        <p mat-line>Vendor: {{device.vendor}}</p>
+                        <p mat-line>Created Date: {{device.dateCreated}}</p>
+                        <p mat-line>Status: {{device.status ? 'Active' : 'Inactive'}}</p>
+                    </mat-list-item>
+                    <mat-divider></mat-divider>
+                </mat-list>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>

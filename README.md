@@ -1,6 +1,9 @@
 # GatewaysDevices
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0. and:
+ - Using json server to simulate a rest api.
+ - Run npm i in the root folder of the project.
+ - Run in a new console in the root directory of the json-server project --watch db.json to start api-rest gateways with json-server.
 
 ## Development server
 

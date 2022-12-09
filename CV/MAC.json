@@ -1,0 +1,298 @@
+{
+  "$schema": "https://raw.githubusercontent.com/getmanfred/mac/v0.3/schema/schema.json",
+  "settings": {
+    "language": "ES",
+    "MACVersion": "0.3"
+  },
+  "aboutMe": {
+    "profile": {
+      "name": "Gilberto",
+      "surnames": "Remedios Arencibia",
+      "title": "Desarrollador front-end Angular.",
+      "description": "Angular, Angular Material, Materialize, RxJs, HML5, JavaScript, CSS",
+      "location": {
+        "country": "Cuba",
+        "notes": "Autocompleted using Google Maps API"
+      }
+    },
+    "relevantLinks": [
+      {
+        "type": "linkedin",
+        "URL": "https://www.linkedin.com/in/gilberto-remedios-arencibia-930361110/"
+      }
+    ],
+    "interestingFacts": [
+      {
+        "topic": "Desarrollador Front-end con 3 años de experiencia en la tecnología Angular + Angular Material",
+        "fact": "Desarrollador Front-end con 3 años de experiencia en la tecnología Angular + Angular Material + Materialize, RxJs"
+      }
+    ]
+  },
+  "experience": {
+    "jobs": [
+      {
+        "organization": {
+          "name": "Habanos S.A. "
+        },
+        "roles": [
+          {
+            "name": "Desarrollador de front-end",
+            "startDate": "2022-09-01",
+            "challenges": [
+              {
+                "description": "TBD"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "Peoplewalking "
+        },
+        "roles": [
+          {
+            "name": "Desarrollador de front-end",
+            "startDate": "2019-01-01",
+            "challenges": [
+              {
+                "description": "TBD"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "Desoft"
+        },
+        "roles": [
+          {
+            "name": "Especialista B en Ciencias Informáticas",
+            "startDate": "2019-01-01",
+            "challenges": [
+              {
+                "description": "Desarrollador frontend Angular, experiencia en librerías de componentes que se integran con Angular: Angular Material, Materialize, NgBootstrap."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "Getronics "
+        },
+        "roles": [
+          {
+            "name": "Desarrollador de front-end",
+            "startDate": "2021-05-01",
+            "finishDate": "2022-10-31",
+            "challenges": [
+              {
+                "description": "Skills: Angular · JavaScript"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "CREALOGIX "
+        },
+        "roles": [
+          {
+            "name": "Desarrollador de front-end",
+            "startDate": "2021-01-01",
+            "finishDate": "2022-10-31",
+            "challenges": [
+              {
+                "description": "Skills: JavaScript"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "knowledge": {
+    "hardSkills": [
+      {
+        "skill": {
+          "name": "Angular2+",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Github",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Cypress",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Jira",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Materialize",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Gitflow",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Redmine",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Postman",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "JavaScript",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "CSS",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Git",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "NPM",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "RxJS",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Ionic",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Visual Studio Code",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "MaterialUI",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "HTML",
+          "type": "technology"
+        }
+      }
+    ],
+    "studies": [
+      {
+        "studyType": "officialDegree",
+        "degreeAchieved": true,
+        "name": "Ingeniero en Ciencias Informáticas",
+        "startDate": "2012-09-01",
+        "finishDate": "2017-07-01",
+        "institution": {
+          "name": "https://www.uci.cu/",
+          "description": "Curso diurno de 5 años recibiendo diferentes materias relacionadas con la Programación, análisis de algorítmos y estructuras de datos, Sistemas de Bases de Datos, Inteligencia Artificial, Ingeniería y Gestión de Software.",
+          "URL": "https://www.uci.cu/",
+          "image": {
+            "alt": "Logotipo_UCI_2.png",
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/22/12/09/0341e672-0b3c-41eb-9359-8f14117bffd0_logotipo_uci_2.png"
+          }
+        },
+        "linkedCompetences": [
+          {
+            "name": "Angular2+",
+            "type": "technology"
+          },
+          {
+            "name": "CSS",
+            "type": "technology"
+          },
+          {
+            "name": "Cypress",
+            "type": "technology"
+          },
+          {
+            "name": "Git",
+            "type": "technology"
+          },
+          {
+            "name": "Gitflow",
+            "type": "technology"
+          },
+          {
+            "name": "Github",
+            "type": "technology"
+          },
+          {
+            "name": "HTML",
+            "type": "technology"
+          },
+          {
+            "name": "MaterialUI",
+            "type": "technology"
+          },
+          {
+            "name": "Materialize",
+            "type": "technology"
+          },
+          {
+            "name": "RxJS",
+            "type": "technology"
+          },
+          {
+            "name": "Visual Studio Code",
+            "type": "technology"
+          }
+        ]
+      }
+    ]
+  },
+  "careerPreferences": {
+    "contact": {
+      "publicProfiles": [
+        {
+          "type": "linkedin",
+          "URL": "https://www.linkedin.com/in/gilberto-remedios-arencibia-930361110/"
+        }
+      ]
+    },
+    "status": "searchingActively"
+  }
+}

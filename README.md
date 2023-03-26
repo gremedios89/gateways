@@ -3,8 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0. and:
  - Using json server to simulate a rest api.
  - Run npm i in the root folder of the project.
- - Open terminal and run the nex comand in the root folder of the project: `npm run server`.
- - Open new terminal and run the nex comand in the root folder of the project: `ng serve`.
+ - Open terminal and run the next comand in the root folder of the project: `npm run server`.
+ - Open new terminal and run the next comand in the root folder of the project: `ng serve`.
 
 ## Development server
 

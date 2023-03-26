@@ -1,51 +1,54 @@
-<form class="example-form" [formGroup]="gateway" (ngSubmit)="saveGateway()">
-    <mat-card>
-        <mat-card-content>
-                <mat-form-field class="example-full-width" appearance="fill">
-                    <mat-label>Serial Number</mat-label>
-                    <input matInput placeholder="Name" formControlName="serialNumber" >
-                    <mat-error *ngIf="serialNumber?.invalid">You must enter a serial number</mat-error>
-                </mat-form-field>
-
-                <mat-form-field class="example-full-width" appearance="fill">
-                    <mat-label>Name</mat-label>
-                    <input matInput placeholder="Employee Count" formControlName="name" >
-                    <mat-error *ngIf="name?.invalid">You must enter a name</mat-error>
-                </mat-form-field>
-
-                <mat-form-field class="example-full-width" appearance="fill">
-                    <mat-label>Ip V4 Address</mat-label>
-                    <input matInput placeholder="Revenue" formControlName="ipv4Address">
-                    <mat-error *ngIf="ipv4Address?.invalid">You must enter a valid IpV4 addres</mat-error>
-                </mat-form-field>
-
-                <div formArrayName='devices'>
-                    <h4>Devices especifications</h4>
-                    <div *ngFor="let device of devicesForms.controls; let i=index" [formGroupName]= "i">
-                        <mat-form-field>
-                            <mat-label>UID</mat-label>
-                            <input matInput placeholder="UID" formControlName='uid'>
-                        </mat-form-field>
-                        <mat-form-field>
-                            <mat-label>Vendor</mat-label>
-                            <input matInput placeholder="Vendor" formControlName='vendor'>
-                        </mat-form-field>
-                        <mat-form-field>
-                            <mat-label>Date Created</mat-label>
-                            <input matInput placeholder="Date Created" formControlName='dateCreated'>
-                        </mat-form-field>
-                        <section class="example-section">
-                            <p><mat-checkbox formControlName="status">Active/Inactive</mat-checkbox></p>
-                        </section>
-                        <button mat-raised-button color="warn" (click)= 'deleteDevice(i)'>delete</button>
+<cdk-virtual-scroll-viewport itemSize="2" class="example-viewport">
+    <h1 mat-dialog-title>Add Gateway</h1>
+    <form class="example-form" [formGroup]="gateway" (ngSubmit)="saveGateway()">
+        <mat-card>
+            <mat-card-content>
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Serial Number</mat-label>
+                        <input matInput placeholder="Serial Number" formControlName="serialNumber" >
+                        <mat-error *ngIf="serialNumber?.invalid">You must enter a serial number</mat-error>
+                    </mat-form-field>
+    
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input matInput placeholder="Name" formControlName="name" >
+                        <mat-error *ngIf="name?.invalid">You must enter a name</mat-error>
+                    </mat-form-field>
+    
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Ip V4 Address</mat-label>
+                        <input matInput type="ipaddress" placeholder="Ip V4 Address" formControlName="ipv4Address">
+                        <mat-error *ngIf="ipv4Address?.invalid">You must enter a valid IpV4 addres</mat-error>
+                    </mat-form-field>
+    
+                    <div formArrayName='devices'>
+                        <h4>Devices especifications</h4>
+                        <div *ngFor="let device of devicesForms.controls; let i=index" [formGroupName]= "i">
+                            <mat-form-field appearance="outline">
+                                <mat-label>UID</mat-label>
+                                <input matInput placeholder="UID" formControlName='uid'>
+                            </mat-form-field>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Vendor</mat-label>
+                                <input matInput placeholder="Vendor" formControlName='vendor'>
+                            </mat-form-field>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Date Created</mat-label>
+                                <input matInput placeholder="Date Created" formControlName='dateCreated'>
+                            </mat-form-field>
+                            <section class="example-section">
+                                <p><mat-checkbox formControlName="status">Active/Inactive</mat-checkbox></p>
+                            </section>
+                            <button mat-raised-button color="warn" (click)= 'deleteDevice(i)'>delete</button>
+                        </div>
                     </div>
+                    <button type="button" style="float: right;" mat-raised-button color="primary" (click) ="addDevice()">Add Device</button>
+            </mat-card-content>
+            <mat-card-footer>
+                <div class="example-button-row" style="margin: 2px">
+                    <button mat-raised-button color="primary" [disabled]="!gateway.valid">Save Gateway</button> | <a (click)="closePopup()" mat-raised-button color="accent">Close</a>
                 </div>
-                <button type="button" style="float: right;" mat-raised-button color="primary" (click) ="addDevice()">Add Device</button>
-        </mat-card-content>
-        <mat-card-footer>
-            <div class="example-button-row" style="margin: 2px">
-                <button mat-raised-button color="primary" [disabled]="!gateway.valid">Save</button> | <a (click)="closePopup()" mat-raised-button color="accent">Close</a>
-            </div>
-        </mat-card-footer>
-    </mat-card>
-</form>
+            </mat-card-footer>
+        </mat-card>
+    </form>
+</cdk-virtual-scroll-viewport>

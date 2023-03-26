@@ -16,7 +16,6 @@ export class GatewayCreateComponent implements OnInit {
   constructor(private builder: FormBuilder, @Inject(MAT_DIALOG_DATA) public data: number, private dialog: MatDialog, private service: GatewayService) {}
 
   gateway = this.builder.group({
-    //id: this.builder.control({ value: this.data + 1, disabled: true }),
     serialNumber: this.builder.control('', Validators.required),
     name: this.builder.control('', Validators.required),
     ipv4Address: this.builder.control('', [Validators.required, Validators.pattern("^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$")]),
@@ -61,7 +60,7 @@ export class GatewayCreateComponent implements OnInit {
   }
 
   addDevice() {
-    if (this.devicesForms.length <= 10) {
+    if (this.devicesForms.length < 10) {
       const device = this.builder.group({
         uid: '',
         vendor: '',

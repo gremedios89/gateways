@@ -27,6 +27,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatRadioModule } from '@angular/material/radio';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 const materialComponents = [
   MatButtonModule,
@@ -56,6 +57,7 @@ const materialComponents = [
   MatChipsModule,
   MatSidenavModule,
   MatRadioModule,
+  ScrollingModule,
 ];
 
 @NgModule({
